@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/wholebkg" >
+    
+	<LinearLayout
+	    android:id="@+id/linear"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="0dp"
+	    android:orientation="horizontal"
+	    >
+	    <Button
+	        android:id="@+id/btnfir"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/homeimagebtn"
+	        android:text="待添加商户" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+	    android:id="@+id/linearsec"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginBottom="20dp"
+	    android:orientation="horizontal"
+	    >
+	</LinearLayout>
+
+    <Button
+        android:id="@+id/btnsec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linear"
+        android:background="@drawable/homeimagebtn" />
+
+    <Button
+        android:id="@+id/btnthir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linear"
+        android:layout_centerVertical="true"
+        android:background="@drawable/homeimagebtn" />
+
+    <Button
+        android:id="@+id/btnfor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnsec"
+        android:layout_centerVertical="true"
+        android:background="@drawable/homeimagebtn" />
+
+    <Button
+        android:id="@+id/btnsix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/homeimagebtn" />
+
+    <Button
+        android:id="@+id/btnfiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/homeimagebtn" />
+
+</RelativeLayout>

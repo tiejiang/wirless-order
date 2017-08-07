@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <!--  
+  <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnpoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="poi" />
+
+        <Button
+            android:id="@+id/btnride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="goto" />
+
+        <Button
+            android:id="@+id/btnreturn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="return" />
+    </LinearLayout>
+    -->
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linear"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="定位icon"
+        android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/ride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bmapView"
+        android:layout_alignTop="@+id/bmapView"
+        android:layout_marginTop="93dp"
+        android:onClick="SearchButtonProcess"
+        android:text="驾车" />
+		
+    <Button
+        android:id="@+id/walk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bmapView"
+        android:layout_below="@+id/ride"
+        android:onClick="SearchButtonProcess"
+        android:text="步行" />
+		
+    <Button
+        android:id="@+id/transit"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bmapView"
+        android:layout_below="@+id/walk"
+        android:onClick="SearchButtonProcess"
+        android:text="公交" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/buttonGroup"
+        android:layout_weight="1.0"
+        android:background="@drawable/next_"
+        android:minWidth="50dp"
+        android:onClick="nodeClick" />
+
+    <Button
+        android:id="@+id/pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/next"
+        android:layout_marginRight="50dp"
+        android:layout_weight="1.0"
+        android:background="@drawable/pre_"
+        android:minWidth="50dp"
+        android:onClick="nodeClick" />
+
+</RelativeLayout>

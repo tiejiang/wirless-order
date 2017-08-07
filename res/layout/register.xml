@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/registbkg"
+      >
+    
+    <LinearLayout 
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="用户名："
+            android:background="@drawable/tongji"
+            />
+        <EditText 
+            android:id="@+id/username"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="   请输入用户名"
+            android:gravity="center"
+            android:background="@drawable/tongji"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button 
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="密码："
+            android:background="@drawable/tongji"
+            />
+        <EditText 
+            android:id="@+id/password"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:password="true"
+            android:hint="   请输入密码"
+            android:gravity="center"
+            android:background="@drawable/tongji"
+            />
+        >
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/linear3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button 
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:text="姓名："
+            android:background="@drawable/tongji"
+            />
+        <EditText 
+            android:id="@+id/name"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="   请输入姓名"
+            android:gravity="center"
+            android:background="@drawable/tongji"
+            />
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        >
+        <Button 
+           android:layout_width="80dp"
+           android:layout_height="50dp"
+           android:text="电话："
+           android:background="@drawable/tongji"
+           />
+        <EditText 
+            android:id="@+id/phonenum"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:hint="   请输入电话"
+            android:gravity="center"
+            android:background="@drawable/tongji"
+            />
+    </LinearLayout>
+</LinearLayout>
